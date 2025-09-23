@@ -1,12 +1,12 @@
-OTP / XOR Lab Starter v3
+OTP / XOR Lab
 ========================
 
 Files:
-- otp_tool.py       : key gen + encrypt/decrypt (OTP) tool (python) - corrected decrypt behavior
+- otp_tool.py       : key gen + encrypt/decrypt (OTP) tool
 - demo_reuse.py     : demo script that generates multiple ciphertexts using same key
-- attack_reuse.py   : simple crib-drag helper to inspect c1 xor c2 and test a crib (fixed guidance print)
+- attack_reuse.py   : simple crib-drag helper to inspect c1 xor c2 and test a crib
 - sample_plains/    : example plaintexts and an example run script
-- run_tests.sh      : basic smoke tests (for instructor/TA)
+- run_tests.sh      : basic smoke tests 
 
 Usage examples:
 1) Generate a 256-byte key:
@@ -21,4 +21,4 @@ Usage examples:
 4) Attack helper:
    python3 attack_reuse.py out_1.hex out_2.hex " the "
 
-Note: This is for local educational use only. Do NOT run against remote/production targets.
+
