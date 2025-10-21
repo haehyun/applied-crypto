@@ -1,0 +1,17 @@
+CC=gcc
+CFLAGS=-O2 -Wall
+LDLIBS=-lcrypto
+
+all: victim gen_target attacker
+
+victim: victim.c
+	$(CC) $(CFLAGS) -o $@ $< $(LDLIBS)
+
+gen_target: gen_target.c
+	$(CC) $(CFLAGS) -o $@ $< $(LDLIBS)
+
+attacker: attacker_skeleton.c
+	$(CC) $(CFLAGS) -o $@ $<
+
+clean:
+	rm -f victim gen_target attacker *.o target.hex
